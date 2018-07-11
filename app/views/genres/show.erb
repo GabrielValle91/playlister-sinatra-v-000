@@ -2,12 +2,12 @@
 <h3>Artists</h3>
 <ul>
   <% @genre.artists.each do |artist|%>
-      <a href="/artists/<%artist.id%>"><%= artist.name%></a><br>
+    <li><a href="/artists/<%artist.id%>"><%= artist.name%></a></li>
   <% end%>
 </ul>
 <h3>Songs(s)</h3>
 <ul>
   <% @genre.songs.each do |song|%>
-    <a href="/songs/<% song.id %>"><%= song.name %></a><br>
+    <li><a href="/songs/<% song.id %>"><%= song.name %></a><br></li>
   <% end %>
 </ul>
